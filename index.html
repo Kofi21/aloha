@@ -4,40 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
     <script
       src="https://kit.fontawesome.com/2b252b7eee.js"
       crossorigin="anonymous"
     ></script>
     <title>Aloha</title>
   </head>
-  <body>
+  <body class="container">
     <header>
       <!-- navigation goes here -->
       <nav>
-        <div>
+        <div class="aloha-logo">
           <!-- logo goes here -->
-          <img src="images/aloha-logo.svg" />
+          <img src="images/aloha-logo.svg" width="100px" ; />
         </div>
-        <ul>
+        <ul class="header-options">
           <li>About</li>
           <li>Shop</li>
           <li>Featured</li>
           <li>Updates</li>
         </ul>
-        <div>
+        <div class="cart-icon">
           <!-- cart icon goes here -->
-          <img src="images/cart-icon.svg" />
+          <img src="images/cart-icon.svg" width="50px" ; />
         </div>
       </nav>
     </header>
     <!-- main site content goes here -->
     <main>
-      <section>
+      <section class="hero-banner">
         <!-- hero section-->
         <p>New Collection</p>
         <h2>Spring/Summer 2020</h2>
       </section>
-      <section>
+      <section class="description">
         <!-- about -->
         <h2><em>Hand-Crafted</em><strong>Styles</strong></h2>
         <p>
@@ -46,7 +48,7 @@
           below.
         </p>
       </section>
-      <section>
+      <section class="shop-grid">
         <!-- shop grid -->
         <div>
           <span>Men's</span>
@@ -58,7 +60,7 @@
           <span>Glasses</span>
         </div>
         <div>
-          <span>Sale</span>
+          <span class="shop-grid-sale" id="sale-title">Sale</span>
         </div>
         <div>
           <span>Bags</span>

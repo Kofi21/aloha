@@ -1,0 +1,81 @@
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 60px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.aloha-logo {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  text-align: left;
+  max-width: 10%;
+  height: auto;
+  padding-right: 300px;
+}
+
+.cart-icon {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 250px;
+}
+.header-options {
+  color: rgb(179, 2, 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+}
+.header-options > li {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.hero-banner {
+  width: 100%;
+  height: 400px;
+  background-position-y: top;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
+    url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+
+  background-position: left, center 50px, center;
+  background-repeat: repeat, no-repeat, repeat;
+  background-size: cover, contain, cover;
+}
+.description {
+  display: flex;
+  height: 150px;
+}
+
+.hero-banner p,
+.hero-banner h2 {
+  color: white;
+  text-align: center;
+}
+
+.shop-grid {
+  display: flex;
+  height: 500px;
+}
+
+footer {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  background: purple;
+}
