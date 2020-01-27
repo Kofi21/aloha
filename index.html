@@ -9,7 +9,9 @@
       href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Fruktur&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/stylesheet.css" />
+
+    <link rel="stylesheet" href="./flickity.css" />
+    <link rel="stylesheet" href="./css/stylesheet.css" />
     <script
       src="https://kit.fontawesome.com/2b252b7eee.js"
       crossorigin="anonymous"
@@ -41,7 +43,7 @@
       <section class="hero-banner">
         <!-- hero section-->
         <p>New Collection</p>
-        <h2>Spring/Summer 2020</h2>
+        <h2>Spring/Summer <br />2020</h2>
       </section>
       <section class="description">
         <!-- about -->
@@ -54,31 +56,23 @@
       </section>
       <section class="shop-grid">
         <!-- shop grid -->
-        <div>
-          <span>Men's</span>
-        </div>
-        <div>
-          <span>Trends</span>
-        </div>
-        <div>
-          <span>Glasses</span>
-        </div>
-        <div>
-          <span class="shop-grid-sale" id="sale-title">Sale</span>
-        </div>
-        <div>
-          <span>Bags</span>
-        </div>
-        <div>
-          <span>Women's</span>
-        </div>
+        <div class="item1">Men's</div>
+
+        <div class="item2">Trends</div>
+
+        <div class="item3">Glasses</div>
+
+        <div class="item4">Sale</div>
+
+        <div class="item5">Bags</div>
+
+        <div class="item6">Women's</div>
       </section>
-      <section>
-        <!-- featured -->
-        <h2><em>Most-Loved</em><stong>Products</stong></h2>
-        <div>
-          <!-- featured products -->
-          <figure>
+
+      <section class="featured">
+        <h2><em>Most-Loved</em><strong> Products</strong></h2>
+        <section class="product-list">
+          <figure class="product-cell">
             <img
               src="images/stretch-knit-dress.jpg"
               alt="black and white checkered knitdress"
@@ -88,14 +82,14 @@
             <p>$169.00</p>
             <button>Add to Cart</button>
           </figure>
-          <figure>
+          <figure class="product-cell">
             <img src="images/cotton-blue-shirt.jpg" alt="cotton denim shirt" />
             <p>Shirts</p>
             <h3>Cotton Blue Shirt</h3>
             <p>$89.00</p>
             <button>Add to Cart</button>
           </figure>
-          <figure>
+          <figure class="product-cell">
             <img
               src="images/checked-stretch-dress.jpg"
               alt="red and white stretch dress"
@@ -105,7 +99,7 @@
             <p>$129.00</p>
             <button>Add to Cart</button>
           </figure>
-          <figure>
+          <figure class="product-cell">
             <img
               src="images/blue-hipster-backpack.jpg"
               alt="blue hipster backpack"
@@ -115,7 +109,7 @@
             <p>$69.00</p>
             <button>Add to Cart</button>
           </figure>
-          <figure>
+          <figure class="product-cell">
             <img
               src="images/demin-overall-shorts.jpg"
               alt="denim overall shorts"
@@ -125,19 +119,21 @@
             <p>$89.00</p>
             <button>Add to Cart</button>
           </figure>
-          <figure>
+          <figure class="product-cell">
             <img src="images/pink-dotted-dress.jpg" alt="pink dotted dress" />
             <p>Dresses</p>
             <h3>Pink Dotted Dress</h3>
             <p>$99.00</p>
             <button>Add to Cart</button>
           </figure>
-          <figure></figure>
-          <img src="images/blue-silk-dress.jpg" alt="blue silk dress" />
-          <p>Dresses</p>
-          <h3>Blue Silk Dress</h3>
-          <p>$129.00</p>
-          <figure>
+          <figure class="product-cell">
+            <img src="images/blue-silk-dress.jpg" alt="blue silk dress" />
+            <p>Dresses</p>
+            <h3>Blue Silk Dress</h3>
+            <p>$129.00</p>
+            <button>Add to Cart</button>
+          </figure>
+          <figure class="product-cell">
             <img
               src="images/cotton-yellow-tshirt.jpg"
               alt="yellow cotton shirt"
@@ -146,35 +142,45 @@
             <h3>Cotton Yellow Shirt</h3>
             <p>$89.00</p>
           </figure>
-        </div>
+        </section>
       </section>
-      <section>
+      <!-- featured -->
+
+      <section class="email-info">
         <!-- updates -->
-        <h2><em>Sign-up for </em><strong>Updates</strong></h2>
-        <p>Stay updated on our latest...</p>
-        <form>
-          <input type="email" placeholder="Your Email" />
-          <input type="submit" value="Subscribe" />
-        </form>
+        <div class="sign-up">
+          <h2><em>Sign-up for </em><strong>Updates</strong></h2>
+          <p>
+            Stay updated on our latest product releases, be first to find out
+            about upcoming sales, and get free style tips from our blog.
+            unsubscribe at any time.
+          </p>
+          <form>
+            <input type="email" placeholder="  Your Email" />
+            <input type="submit" value="Subscribe" />
+          </form>
+        </div>
       </section>
     </main>
     <footer>
-      <div>
+      <div class="company-info">
         <p>&copy 2020 Aloha Apparel <br />Powered using HTML and CSS</p>
         <p>
           555-555-5555
           <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a>
         </p>
-        <p>1490 W Broadway <br />Vancouver, Bc, Canada</p>
+        <p class="address">1490 W Broadway <br />Vancouver, Bc, Canada</p>
       </div>
-      <div>
+      <div class="media-list">
         <ul>
-          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-facebook"></i></li>
           <li><i class="fab fa-twitter"></i></li>
           <li><i class="fab fa-instagram"></i></li>
           <li><i class="fab fa-pinterest"></i></li>
         </ul>
       </div>
     </footer>
+    <script src="flickity.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
