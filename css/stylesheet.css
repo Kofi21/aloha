@@ -111,6 +111,7 @@
 
 body {
   color: #2d2d2d;
+  font-size: 14px;
 }
 
 p {
@@ -121,7 +122,9 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 80px;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   justify-content: space-between;
 }
 
@@ -141,6 +144,16 @@ nav {
   order: 3;
   justify-content: space-around;
   color: #e2574c;
+  font-family: "Playfair Display Regular";
+  text-transform: uppercase;
+  border-top-style: solid;
+  border-top-color: lightgray;
+  border-width: 1px;
+  /* text-decoration: overline; */
+}
+
+.header-options li {
+  padding-top: 0.5em;
 }
 
 .hero-banner {
@@ -150,11 +163,15 @@ nav {
   justify-content: center;
   width: 100%;
   height: 150px;
-  background-image: url("../images/banner-girl.png"),
-    url("../images/flower-bkgd.jpg");
-  background-repeat: no-repeat, repeat;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0,
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+  background-repeat: no-repeat, no-repeat, repeat;
   background-position: center;
-  background-size: contain, contain;
+  background-size: cover, contain, contain;
 }
 
 .hero-banner p {
@@ -162,6 +179,8 @@ nav {
   text-align: center;
   font-family: "Raleway Light";
   font-size: larger;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .hero-banner h2 {
@@ -183,6 +202,10 @@ nav {
   text-align: center;
 }
 
+.description h2 {
+  line-height: 45px;
+}
+
 .description em {
   font-family: "Playfair Display Italic";
   font-size: x-large;
@@ -196,6 +219,8 @@ nav {
 
 .description p {
   color: black;
+  line-height: 35px;
+  font-family: "Raleway Light";
 }
 
 .shop-grid {
@@ -203,6 +228,11 @@ nav {
   width: 100%;
   /* width: 100vw; */
   height: fit-content;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Raleway Medium";
+  font-size: 20px;
+  font-weight: bolder;
   grid-gap: 8px;
   grid-template-areas:
     "mens mens"
@@ -213,7 +243,7 @@ nav {
 
 .shop-grid div {
   display: flex;
-  /* height: 11vh; */
+  height: 100vh;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -227,7 +257,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   /* background-position-y: 0vmin; */
-  height: 185px;
+  /* height: 185px; */
   width: 100%;
 }
 
@@ -239,7 +269,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   /* background-position: 0vmin; */
-  height: 185px;
+  /* height: 185px; */
   width: 100%;
 }
 
@@ -251,7 +281,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   /* background-position-y: 0vmin; */
-  height: 185px;
+  /* height: 185px; */
   /* width: 100%; */
 }
 
@@ -263,7 +293,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   /* background-position-y: 0vmin; */
-  height: 185px;
+  /* height: 185px; */
   width: 100%;
 }
 
@@ -275,7 +305,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   /* background-position-y: 0vmin; */
-  height: 185px;
+  /* height: 185px; */
   width: 100%;
 }
 
@@ -287,7 +317,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   /* background-position-y: 0vmin; */
-  height: 185px;
+  /* height: 185px; */
   width: 100%;
 }
 /* 
@@ -340,7 +370,8 @@ section.featured strong {
 }
 
 .product-cell h3 {
-  font-family: "Raleway Light";
+  font-family: "Raleway Mediium";
+
   color: #e2574c;
 }
 
@@ -348,6 +379,17 @@ section.featured strong {
 .sign-up h2 {
   display: flex;
   justify-content: center;
+  color: white;
+}
+
+.sign-up h2 {
+  font-size: xx-large;
+  font-family: "Playfair Display Italic";
+  line-height: 75px;
+}
+
+.sign-up p {
+  line-height: 35px;
 }
 
 .sign-up form {
@@ -368,7 +410,7 @@ section.featured strong {
   width: 100%;
   height: 300px;
   background-image: url(../images/wave-bkgd.jpg);
-  background-size: 100%;
+  background-size: auto;
   background-position: bottom;
   margin-bottom: 15px;
   margin-top: 30px;
@@ -378,14 +420,15 @@ section.featured strong {
 input[type="email"] {
   border-radius: 2em;
   width: 70%;
-  height: 30px;
+  height: 35px;
 }
 
 input[type="submit"] {
   border-radius: 2em;
   width: 95px;
   height: 29px;
-  margin-left: -95px;
+  margin-top: 4px;
+  margin-left: -98px;
   color: white;
   background: #e2574c;
 }
@@ -404,10 +447,15 @@ footer {
   flex-direction: column;
   height: 120px;
   justify-content: space-between;
+  font-family: "Playfair Display Regular";
 }
 
 .company-info p {
   text-align: center;
+}
+
+.company-info a {
+  color: white;
 }
 
 .address {
@@ -429,7 +477,11 @@ footer {
     height: min-content;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+  }
+
+  .aloha-logo {
+    flex-basis: 0;
   }
 
   .cart-icon {
@@ -440,10 +492,11 @@ footer {
     display: flex;
     flex-direction: row;
     height: 0px;
-    padding-right: 100px;
+    /* padding-right: 100px; */
     padding-top: 15px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: #e2574c;
+    border-top-style: none;
   }
 
   .shop-grid {
@@ -463,6 +516,11 @@ footer {
     height: 90%;
   }
 
+  .product-cell img {
+    display: block;
+    width: 50%;
+  }
+
   .item1 {
     grid-area: mens;
     /* height: 11vh; */
@@ -471,8 +529,12 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     /* background-position-y: 0vmin; */
-    height: 185px;
+    /* height: 185px; */
     width: 0%;
+  }
+
+  footer {
+    flex-direction: row;
   }
 
   .company-info {
@@ -480,8 +542,7 @@ footer {
     flex-direction: column;
     height: 120px;
     width: 100%;
-    justify-content: flex-start;
-    align-self: flex-end;
+    align-items: baseline;
   }
 
   .media-list ul {
@@ -541,7 +602,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     /* background-position-y: 0vmin; */
-    height: 185px;
+    /* height: 185px; */
     width: 0%;
   }
 
@@ -561,6 +622,4 @@ footer {
     width: 100%;
     justify-content: flex-end;
   }
-}
-
 }
