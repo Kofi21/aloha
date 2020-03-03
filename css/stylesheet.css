@@ -162,16 +162,17 @@ nav {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 150px;
+  height: 400px;
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.2) 0,
       rgba(0, 0, 0, 0.2)
     ),
     url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+  background-size: cover, contain, cover;
+  background-position-x: center;
+  background-position-y: center, 2rem, center;
   background-repeat: no-repeat, no-repeat, repeat;
-  background-position: center;
-  background-size: cover, contain, contain;
 }
 
 .hero-banner p {
@@ -220,6 +221,7 @@ nav {
 .description p {
   color: black;
   line-height: 35px;
+  width: 330px;
   font-family: "Raleway Light";
 }
 
@@ -243,7 +245,7 @@ nav {
 
 .shop-grid div {
   display: flex;
-  height: 100vh;
+  height: 183px;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -351,25 +353,25 @@ section.featured strong {
   font-family: "Playfair Display Bold";
   font-size: xx-large;
 }
-.product-cell {
+.carousel-cell {
   display: block;
   /* position: initial; */
   width: 100%;
   /* min-height: 200px; */
 }
-.product-cell img {
+/* .product-cell img {
   display: block;
   width: 100%;
-}
+} */
 
-.product-cell p {
+.carousel-cell p {
   font-family: "Playfair Display Regular";
   color: rgb(121, 121, 121);
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.product-cell h3 {
+.carousel-cell h3 {
   font-family: "Raleway Mediium";
 
   color: #e2574c;
@@ -390,6 +392,9 @@ section.featured strong {
 
 .sign-up p {
   line-height: 35px;
+  width: 330px;
+  font-family: "Raleway Light";
+  font-weight: bold;
 }
 
 .sign-up form {
@@ -471,6 +476,10 @@ footer {
   padding-top: 35px;
 }
 
+.media-text {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   nav {
     display: flex;
@@ -499,38 +508,44 @@ footer {
     border-top-style: none;
   }
 
-  .shop-grid {
-    display: grid;
+  .hero-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    /* width: 100vw; */
-    height: fit-content;
-    grid-gap: 8px;
+    height: 400px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0,
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+    background-size: cover, contain, contain;
+    background-position-x: center;
+    background-position-y: center, 2rem, center;
+    background-repeat: no-repeat, no-repeat, repeat;
+  }
+
+  .description p {
+    width: 430px;
+  }
+
+  .shop-grid {
     grid-template-areas:
       "mens mens trends glasses"
       "sale bags womens womens";
   }
 
-  .flickity-slider {
+  /* .flickity-slider {
     position: absolute;
     width: 50%;
     height: 90%;
-  }
+  } */
 
-  .product-cell img {
-    display: block;
+  .carousel-cell {
+    /* display: block; */
     width: 50%;
-  }
-
-  .item1 {
-    grid-area: mens;
-    /* height: 11vh; */
-    background-image: url(../images/mens-category.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-position-y: 0vmin; */
-    /* height: 185px; */
-    width: 0%;
   }
 
   footer {
@@ -543,14 +558,29 @@ footer {
     height: 120px;
     width: 100%;
     align-items: baseline;
+    margin-left: 15px;
   }
 
   .media-list ul {
     color: white;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    justify-content: flex-end;
+    /* width: 100%;
+    justify-content: flex-end; */
+  }
+
+  .media-list li {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 100px 0px auto;
+    padding-right: 50px;
+  }
+
+  .media-text {
+    display: block;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    line-height: 20px;
   }
 }
 
@@ -577,43 +607,57 @@ footer {
     color: #e2574c;
   }
 
-  .shop-grid {
-    display: grid;
+  .hero-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    /* width: 100vw; */
-    height: fit-content;
-    grid-gap: 8px;
+    height: 400px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0,
+        rgba(0, 0, 0, 0.2)
+      ),
+      url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+    background-size: cover, contain, 65%;
+    background-position-x: center;
+    background-position-y: center, 5rem, center;
+    background-repeat: no-repeat, no-repeat, repeat;
+  }
+
+  .description p {
+    width: 475px;
+  }
+  .shop-grid {
     grid-template-areas:
       "mens mens trends glasses"
       "sale bags womens womens";
   }
 
-  .flickity-slider {
+  .shop-grid div {
+    height: 300px;
+  }
+
+  /* .flickity-slider {
     position: absolute;
     width: 25%;
     height: 90%;
+  } */
+
+  .carousel-cell {
+    /* display: block; */
+    width: 25%;
   }
 
-  .item1 {
-    grid-area: mens;
-    /* height: 11vh; */
-    background-image: url(../images/mens-category.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-position-y: 0vmin; */
-    /* height: 185px; */
-    width: 0%;
-  }
-
-  .company-info {
+  /* .company-info {
     display: flex;
     flex-direction: column;
     height: 120px;
     width: 100%;
     justify-content: flex-start;
     align-self: flex-end;
-  }
+  } */
 
   .media-list ul {
     color: white;
