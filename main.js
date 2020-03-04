@@ -6,10 +6,15 @@ window.addEventListener("load", function() {
     cellAlign: "left",
     contain: true
   });
+});
 
-  // element argument can be a selector string
-  //   for an individual element
-  // var flkty = new Flickity( '.main-carousel', {
-  //   // options
-  // });
+const btn = document.querySelectorAll("button");
+const count = document.getElementById("number");
+let counter = 0;
+
+btn.forEach(function(element, index) {
+  btn[index].addEventListener("click", function() {
+    counter++;
+    count.innerHTML = counter;
+  });
 });

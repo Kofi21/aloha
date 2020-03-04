@@ -135,7 +135,31 @@ nav {
 
 .cart-icon {
   margin-right: 10px;
+  position: relative;
 }
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+#number {
+  height: 25px;
+  width: 25px;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  right: -17px;
+}
+
 .header-options {
   display: flex;
   flex-direction: row;
@@ -221,7 +245,7 @@ nav {
 .description p {
   color: black;
   line-height: 35px;
-  width: 330px;
+  width: 315px;
   font-family: "Raleway Light";
 }
 
@@ -245,7 +269,7 @@ nav {
 
 .shop-grid div {
   display: flex;
-  height: 183px;
+  height: 250px;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -392,8 +416,8 @@ section.featured strong {
 
 .sign-up p {
   line-height: 35px;
-  width: 330px;
-  font-family: "Raleway Light";
+  width: 345px;
+  font-family: "Raleway Medium";
   font-weight: bold;
 }
 
@@ -404,6 +428,9 @@ section.featured strong {
   margin-bottom: 10px;
   padding: 0px;
 }
+
+/* .sign-up strong {
+  font-family: "Playfair Display Bold"; */
 
 .email-info {
   display: flex;
@@ -417,6 +444,7 @@ section.featured strong {
   background-image: url(../images/wave-bkgd.jpg);
   background-size: auto;
   background-position: bottom;
+  background-position-y: 21rem;
   margin-bottom: 15px;
   margin-top: 30px;
   font-family: "PlayfairDisplay-Regular";
