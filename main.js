@@ -1,7 +1,7 @@
 window.addEventListener("load", function() {
-  var elem = document.querySelector(".product-list");
+  let elem = document.querySelector(".product-list");
 
-  var flkty = new Flickity(elem, {
+  let flkty = new Flickity(elem, {
     // options
     cellAlign: "left",
     contain: true
