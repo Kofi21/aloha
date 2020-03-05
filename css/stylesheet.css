@@ -180,6 +180,10 @@ nav {
   /* text-decoration: overline; */
 }
 
+.header-options ul {
+  display: contents;
+}
+
 .header-options li {
   padding-top: 0.5em;
 }
@@ -722,7 +726,7 @@ footer {
   }
 
   .description h2 {
-    font-size: 37px;
+    font-size: 39px;
     padding-bottom: 10px;
   }
 
@@ -766,12 +770,34 @@ footer {
     padding-bottom: 30px;
   }
 
+  .sign-up p {
+    width: 735px;
+    font-size: 20px;
+  }
+
+  .sign-up h1 {
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+
+  input[type="email"] {
+    width: 513px;
+    height: 45px;
+  }
+
+  input[type="submit"] {
+    width: 145px;
+    margin-left: -150px;
+    height: 38px;
+  }
+
   .email-info {
     margin-top: 50px;
   }
 
   .company-info p {
     text-align: initial;
+    font-size: 18px;
   }
 
   .media-list ul {
@@ -780,6 +806,7 @@ footer {
     /* flex-direction: column; */
     width: 100%;
     justify-content: flex-end;
+    font-size: 18px;
   }
 
   /* .media-list li {
