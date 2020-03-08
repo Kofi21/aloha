@@ -216,13 +216,16 @@ nav {
   text-transform: uppercase;
 }
 
-.hero-banner div span {
+.hero-banner div {
+  padding-top: 10px;
+}
+
+.hero-banner div h1 {
   color: white;
   text-align: center;
   font-family: "Playfair Display";
-  font-size: 70px;
+  font-size: 35px;
   /* font-weight: lighter; */
-  padding-top: 10px;
   text-shadow: 0.5px 0.5px lightgrey;
 }
 
@@ -238,7 +241,7 @@ nav {
 
 .description h2 {
   line-height: 45px;
-  font-size: x-large;
+  font-size: 32px;
 }
 
 .description em {
@@ -386,6 +389,10 @@ button {
   height: 630px;
 }
 
+.featured h2 {
+  padding-top: 50px;
+}
+
 .featured em {
   font-family: "Playfair Display";
   font-style: italic;
@@ -447,6 +454,7 @@ button {
   width: 345px;
   font-family: "Raleway";
   font-weight: 500;
+  font-size: 16px;
 }
 
 .sign-up form {
@@ -590,16 +598,38 @@ footer {
     background-repeat: no-repeat, no-repeat, repeat;
   }
 
+  .hero-banner div {
+    padding-top: 20px;
+    display: flex;
+  }
+
+  .hero-banner div h1 {
+    font-size: 45px;
+  }
+
   .description p {
-    width: 430px;
+    width: 525px;
+    font-size: 18px;
+  }
+
+  .description h2 {
+    font-size: 35px;
   }
 
   .shop-grid {
+    font-size: 30px;
     grid-template-areas:
       "mens mens trends glasses"
       "sale bags womens womens";
   }
 
+  .shop-grid div {
+    height: 175px;
+  }
+
+  .featured img {
+    width: 75%;
+  }
   /* .flickity-slider {
     position: absolute;
     width: 50%;
@@ -611,8 +641,20 @@ footer {
     width: 50%;
   }
 
+  .sign-up {
+    font-size: 38px;
+  }
+  .sign-up p {
+    font-size: 18px;
+    width: 530px;
+  }
+
+  input[type="email"] {
+    width: 75%;
+  }
   footer {
     flex-direction: row;
+    font-size: 16px;
   }
 
   .company-info {
