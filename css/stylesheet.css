@@ -177,7 +177,6 @@ nav {
   border-top-style: solid;
   border-top-color: lightgray;
   border-width: 1px;
-  /* text-decoration: overline; */
 }
 
 .header-options ul {
@@ -225,7 +224,6 @@ nav {
   text-align: center;
   font-family: "Playfair Display";
   font-size: 35px;
-  /* font-weight: lighter; */
   text-shadow: 0.5px 0.5px lightgrey;
 }
 
@@ -246,14 +244,12 @@ nav {
 
 .description em {
   font-family: "Playfair Display";
-  /* font-size: x-large; */
   font-style: italic;
 }
 
 .description strong {
   font-family: "Playfair Display";
   font-weight: bold;
-  /* font-size: x-large; */
 }
 
 .description p {
@@ -267,7 +263,6 @@ nav {
 .shop-grid {
   display: grid;
   width: 100%;
-  /* width: 100vw; */
   height: fit-content;
   color: white;
   text-transform: uppercase;
@@ -292,83 +287,57 @@ nav {
 
 .item1 {
   grid-area: mens;
-  /* height: 11vh; */
   background-image: url(../images/mens-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-position-y: 0vmin; */
-  /* height: 185px; */
   width: 100%;
 }
 
 .item2 {
   grid-area: trends;
-  /* height: 11vh; */
   background-image: url(../images/trends-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-position: 0vmin; */
-  /* height: 185px; */
   width: 100%;
 }
 
 .item3 {
   grid-area: glasses;
-  /* height: 11vh; */
   background-image: url(../images/glasses-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-position-y: 0vmin; */
-  /* height: 185px; */
-  /* width: 100%; */
 }
 
 .item4 {
   grid-area: sale;
-  /* height: 11vh; */
   background-image: url(../images/sale-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-position-y: 0vmin; */
-  /* height: 185px; */
   width: 100%;
 }
 
 .item5 {
   grid-area: bags;
-  /* height: 11vh; */
   background-image: url(../images/bags-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-position-y: 0vmin; */
-  /* height: 185px; */
   width: 100%;
 }
 
 .item6 {
   grid-area: womens;
-  /* height: 11vh; */
   background-image: url(../images/womens-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-position-y: 0vmin; */
-  /* height: 185px; */
   width: 100%;
 }
-/* 
-section .itemdisplay {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-} */
+
 .product-list {
   display: block;
   position: relative;
@@ -407,14 +376,8 @@ button {
 }
 .carousel-cell {
   display: block;
-  /* position: initial; */
   width: 100%;
-  /* min-height: 200px; */
 }
-/* .product-cell img {
-  display: block;
-  width: 100%;
-} */
 
 .carousel-cell p {
   font-family: "Playfair Display";
@@ -470,9 +433,6 @@ button {
   font-weight: bold;
   font-style: normal;
 }
-
-/* .sign-up strong {
-  font-family: "Playfair Display Bold"; */
 
 .email-info {
   display: flex;
@@ -572,7 +532,6 @@ footer {
     display: flex;
     flex-direction: row;
     height: 0px;
-    /* padding-right: 100px; */
     padding-top: 15px;
     justify-content: space-evenly;
     color: #e2574c;
@@ -630,14 +589,8 @@ footer {
   .featured img {
     width: 75%;
   }
-  /* .flickity-slider {
-    position: absolute;
-    width: 50%;
-    height: 90%;
-  } */
 
   .carousel-cell {
-    /* display: block; */
     width: 50%;
   }
 
@@ -672,9 +625,6 @@ footer {
   .media-list ul {
     color: white;
     display: block;
-    /* flex-direction: column; */
-    /* width: 100%;
-    justify-content: flex-end; */
   }
 
   .media-list li {
@@ -787,25 +737,9 @@ footer {
     height: 300px;
   }
 
-  /* .flickity-slider {
-    position: absolute;
-    width: 25%;
-    height: 90%;
-  } */
-
   .carousel-cell {
-    /* display: block; */
     width: 25%;
   }
-
-  /* .company-info {
-    display: flex;
-    flex-direction: column;
-    height: 120px;
-    width: 100%;
-    justify-content: flex-start;
-    align-self: flex-end;
-  } */
 
   .featured h2 {
     padding-top: 55px;
@@ -845,18 +779,10 @@ footer {
   .media-list ul {
     color: white;
     display: block;
-    /* flex-direction: column; */
     width: 100%;
     justify-content: flex-end;
     font-size: 18px;
   }
-
-  /* .media-list li {
-    display: flex;
-    flex-direction: row;
-    margin: 0px 100px 0px auto;
-    padding-right: 50px;
-  } */
 
   .media-list i {
     padding-top: 3px;
